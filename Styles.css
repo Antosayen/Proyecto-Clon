@@ -1,0 +1,31 @@
+/*variables globales*/
+
+:root {
+    --global-font-size: 16px;
+    --medium-font-size: 23px;
+    --red-color: #e50914;
+    --white-color: #fff;
+    --grey-color: #8c8c8c;
+    --black-color: #000;
+    --dark-grey-color: #303030;
+    --margin-center: 0 auto;
+}
+
+/**************************************************************************/
+/*header*/
+
+.header__logo {
+    width: 133px;
+    height: 36px;
+    padding: 28px 55px;
+}
+/**************************************************************************/
+
+/*Body*/
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: var(--global-font-size);   
+    background-color: var(--black-color);
+    margin: 0;
+    color: var(--white-color);
+}/**************************************************************************/
