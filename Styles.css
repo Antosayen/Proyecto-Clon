@@ -110,7 +110,7 @@ header{
     );
 }
 /**************************************************************************/
-
+/*Article 1*/
 article{
     border-bottom: 8px solid #222;
 }
@@ -149,3 +149,106 @@ article:nth-child(3){
     height: 100%;
 
 }
+
+/*Article2*/
+.section__descarga{
+    padding: 05.em 0.75 em;
+    align-items: center;
+    width: 62%;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.75em;
+    text-align: justify;
+    position: relative;
+    background: var(--black-color);
+    top: -115px;
+    left: 80px;
+}
+.section__imagen--small {
+    height: 55px;
+    display: inline-block;
+}
+.section__informacion{
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
+    position: relative;
+    top: -10px;
+}
+.texto__minimo{
+    font-size: var(--global-font-size);
+    color: var(--white-color);
+    font-weight: 600;
+    margin: 0;
+}
+.texo__azul{
+    color: #0071eb;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.section__imagen--small{
+    height: 55px;
+    display: inline-block;
+}
+.section__telefono{
+    position: relative;
+    top: 90px;
+}
+/*Articulo3*/
+.section__dispositivos{
+    top: 31px;
+    width: 61%;
+    left: 86px;
+    z-index: -1;
+}
+
+/*FAQ*/
+.faq{
+    width: 80%;
+    margin: var(--margin-center);
+    text-align: center;
+    margin-top: 40px;
+
+}
+.faq__lista{
+    margin: 16px auto;
+    max-width: 815px;
+}
+.faq__objeto{
+    list-style: none;
+    margin: 0 0 8px 0;
+}
+.boton__faq{
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    position: relative;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    background-color: var(--dark-grey-color);
+}
+.svg-pequeño{
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    height: 1em;
+    fill: white;
+    transform: translateY(-50%); /*para rotar signo +, ahora se ve como x*/
+    transition: 300ms;
+}
+.svg-pequeño.svg-pequeño--panel-cerrado{
+    transform: translateY(-50%) rotate(-45deg);
+    transition: 300ms;
+}
+.faq__respuesta{
+    text-align: center;
+    background: var(--dark-grey-color);
+}
+.faq__respuesta--cerrada{
+    max-height: 0;
+   /* overflow: hidden;*/
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}   
+.faq__respuesta--abierta{
+    max-height: 1200px;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}   
